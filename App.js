@@ -22,7 +22,8 @@ app.use('/api/', RoutesBackend)
 app.use('/media/', express.static(path.join(path.resolve(), 'Backend', 'Resources')));
 
 // Frontend
-app.use(express.static(path.join(path.resolve(), 'Frontend', 'Views')))
 app.use(express.static(path.join(path.resolve(), 'Frontend', 'Styles')))
+app.use(express.static(path.join(path.resolve(), 'Frontend', 'Styles', 'css')))
+app.use(express.static(path.join(path.resolve(), 'Frontend', 'Views')))
 
 module.exports = app;
